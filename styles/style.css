@@ -375,6 +375,12 @@ nav {
     background: aquamarine;
     padding: 0 20px;
     border-radius: 10px;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.boxes .box1:hover, .boxes .box2:hover {
+    transform: translateY(-10px);
 }
 
 .project h3 {
@@ -390,12 +396,12 @@ nav {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
-    transform: translateY(0);
+    transform: scale(1);
     transition: all 0.3s ease;
 }
 
 .project img:hover {
-    transform: translateY(-10px);
+    transform: scale(1.1);
 }
 
 .contact {
