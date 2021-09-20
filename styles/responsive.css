@@ -1,0 +1,152 @@
+@media screen and (max-width: 1366px) {
+    .nav-links {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background: #1b1b1b;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: tranform 0.5s ease-in;
+        transition: opacity 0.5s ease-in;
+        z-index: 99;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    @keyframes navAnimation {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .hero-text .button {
+        width: 100%;
+    }
+
+    .about {
+        width: 100%;
+        margin-bottom: 20vh;
+        padding-top: 100px;
+        min-height: 90vh;
+    }
+
+    .content-section {
+        float: none;
+        width: 90%;
+        margin: auto;
+    }
+
+    .image-section {
+        display: none;
+    }
+
+    .content-section .title {
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .content-section .content h3 {
+        width: 100%;
+    }
+
+    .content-section .content .button {
+        text-align: center;
+    }
+
+    .content-section .content .button a {
+        padding: 9px 30px;
+    }
+
+    .content-section .social {
+        text-align: center;
+    }
+
+    .skills .skills-bar {
+        width: 80%;
+    }
+
+    .education-section {
+        margin-bottom: 20vh;
+    }
+
+    .education-section .education-items {
+        width: 80%;
+    }
+    
+    .experiences {
+        margin-bottom: 20vh;
+    }
+
+    .experiences-box {
+        width: 80%;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .boxes .box1, .boxes .box2 {
+        width: 100%;
+        margin-bottom: 20px;
+    } 
+
+    .contact {
+        padding: 50px;
+    }
+
+    .contacts {
+        flex-direction: column;
+    }
+
+    .contacts .contact-info {
+        margin-bottom: 40px;
+    }
+
+    .contacts .contact-info, .contact-form {
+        width: 100%;
+    }
+}
